@@ -55,6 +55,14 @@ class TestAuthorisation : StringSpec(), TestListener {
 
                 }
             }
+            registerPage.run {
+                wait.until {
+                    emailInput.isDisplayed
+                    passwordInput.isDisplayed
+                    registerButton.isEnabled
+
+                }
+            }
         }
     }
 }
