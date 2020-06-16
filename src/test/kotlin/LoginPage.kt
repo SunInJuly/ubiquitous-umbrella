@@ -23,7 +23,3 @@ class LoginPage(private val driver: WebDriver) {
 
     fun open() = driver.get(pageUrl)
 
-    fun verifyUrl() {
-        WebDriverWait(driver, 10).until { it.currentUrl == pageUrl }
-    }
-}
